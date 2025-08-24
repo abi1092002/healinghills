@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    line-height: 1.6;
+}
+
+
+
+
+section{
+    padding: 80px 0;
+}
+
+.title{
+    text-align: center;
+    padding: 15px;
+
+}
+
+.title h1{
+    font-size: 35px;
+    color: #ff6f00;
+}
+
+.row{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex: 250px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.theme{
+    color: #ff6f00;
+}
+
+/*-----------------header--------------------*/
+
+
+header{
+    background-color: #fffef8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+
+}
+
+nav a{
+    color:#333;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: #ff6f00;
+    border-bottom: 4px solid #ff6f00;
+    border-radius: 10px;
+}
+
+
+/*-----------------hero--------------------*/
+
+.hero{
+    background-image: url(../images/banner\ \(3\).jpg);
+    background-size: cover;
+    min-height: 90vh;
+    place-content: center;
+}
+
+.hero h1{
+    font-size: 28px;
+}
+
+.btn1{
+    background-color: #ff6f00;
+    border: 2px solid #ff6f00;
+    color: #eee;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.btn1:hover{
+    border: 2px solid #ff6f00;
+    background-color: transparent;
+    color: #ff6f00;
+
+}
+
+
+/*------------------services--------------------*/
+
+.service{
+    background-color: #faf1e0;
+}
+
+.service .col:hover{
+    transform: scale(1.1);
+}
+
+.service h2{
+    font-size: 20px;
+}
+.service .col{
+    border: 1px solid #ff6f00;
+    border-radius: 10px;
+}
+
+
+/*---------------team---------------*/
+
+.team .col{
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+.team h2{
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.team .col:hover{
+    border: 1px solid #ff6f00;
+    transform: scale(1.1);
+    color: #ff6f00;
+}
+
+.team img{
+    border-radius: 10px;
+}
+
+
+/*---------------counter---------------*/
+
+.counter{
+    background-image: url(../images/titlebar-bg.jpg);
+    color: #ff6f00;
+    text-align: center;
+}
+
+.counter h1{
+    font-size: 35px;
+    margin-bottom: -15px;
+}
+
+/*---------------testimonial---------------*/
+
+.testimonial{
+    text-align: center;
+}
+
+.testimonial .col{
+    background-color: #f7f7e4;
+    border: 1px solid #ff6f00;
+    border-radius: 20px;
+}
+
+.testimonial .col:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 10px #e5e5e5;
+}
+
+.testimonial img{
+    width: 80px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border-top: 2px solid #ff6f00;
+}
+
+.testimonial h3{
+    color: #ff6f00;
+}
+
+.testimonial .title{
+    margin-bottom: 50px;
+}
+
+
+footer{
+    background-color: #faf1e0;
+    background-image: url(../images/follwer-bg.png);
+    padding: 50px;
+}
+
+footer a{
+
+    display: block;
+    margin: 20px 0;
+    color: #333;
+
+}
+
+footer a:hover{
+    transform: scale(1.2);
+    color: #ff6f00;
+}
+
+footer .col{
+    margin: auto;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.social img{
+    width: 30px;
+    filter: grayscale(100%);
+}
+.social img:hover{
+    filter: grayscale(0);
+}
+
+.end{
+    border-top: .5px solid #ff6f00;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: -30px;
+}
+
+
+
+
+/* ------media queryt for mobile------- */
+
+
+@media screen and (max-width:500px) {
+
+    header{
+        flex-direction: column;
+        position: static;
+    }
+    nav a{
+        display: block;
+        text-align: center;
+    }
+    section{
+        text-align: center;
+    }
+    .testimonial .col{
+        margin-bottom: 50px;
+    }
+    footer{
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* -------------media query for tab--------------- */
+
+
+@media screen and (min-width:501px) and (max-width:800px){
+
+    section{
+        text-align: center;
+    }
+    .testimonial .col{
+        margin-bottom: 50px;
+    }
+    .hide{
+        display: none;
+    }
+    footer a{
+        display: inline;
+        padding: 5px;
+    }
+    
+}
